@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/tr/1999/REC-html401-19991224/loose.dtd">
+
+<html><head><title>VMware vSphere Web Services SDK .NET (DotNet) Samples Readme</title>
+<meta content="VMware, Inc. All rights reserved." name="copyright"></meta>
+<link rel="stylesheet" type="text/css" href="../../docresources/template.css">
+</link>
+<style type="text/css">
+
+
+h4 {
+	padding: 0;
+	font-size: 12px;
+	font-weight: bold;
+	border-top: 1px solid #dedede;
+	background-color:#E6EDF6;
+}
+
+div.underline_head {
+        text-decoration: underline;
+        margin-bottom: 15px;
+}
+
+.Parameter {
+	margin: 0 0 7px 0;
+	width: 100%;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.Code
+    {
+	font-size: 11px; font-family: 
+	"Courier New", Courier, monospace; 
+	}
+	
+.Console
+    {
+	font-size: 11px; font-family: 
+	"Courier New", Courier, monospace; 
+	color: #ffffff;
+	font-weight: bold;
+	background: #000000;
+	}
+
+.TableText {
+	FONT-SIZE: 11px;
+}
+
+.TableHead {
+	FONT-SIZE: 10px; font-weight: bold;
+}
+
+.BoldRedText {
+	FONT-WEIGHT: bold; COLOR: #CC0000; TEXT-DECORATION: none
+}
+.BoldBlue {
+	FONT-WEIGHT: bold; COLOR: #3366AA; TEXT-DECORATION: none
+}
+.Miniscule {font-size: 9px;
+           }
+
+.Nav {font-size: 11px; COLOR: #3366AA;
+           }
+.Large { font-size: 16px; FONT-WEIGHT: bold; }
+.Exp {
+	font-size:11px; text-transform: uppercase; FONT-WEIGHT: bold; COLOR: #3366AA;
+}
+.Caption {
+	font-size:11px; line-height:12px; text-transform: uppercase; FONT-WEIGHT: bold; COLOR: #000000; TEXT-DECORATION: none
+}
+
+</style>
+</head>
+<body>
+		
+<table cellpadding="0" cellspacing="5" id="main-table">
+<tr><td id="main-body" align="left">
+<!-- ///*** start of content area ***/// -->
+
+<table width="100%" cellpadding="5">
+<tr>
+<td><h1>VMware vSphere Web Services SDK .NET (DotNet) Samples Readme</h1>
+<td align="right">
+<img src="../../docresources/vmware.gif" alt="VMware logo" width="187" height="72" border="0"></img>
+</td>
+</tr>
+</table>
+
+<p class="Nav">
+<img src="../../docresources/page.gif" alt="Back to the main Readme" width="13" height="16" border="0"></img> &nbsp;
+<a href="../../docs/SDK-README.html" title="Go back to the Web Services SDK Readme...">VMware vSphere Web Services SDK Readme</a>
+</p>
+
+<hr/>
+<table width="100%" cellpadding="0" cellspacing="0"><tr><td vAlign="top" width="40%">
+
+<p>This document includes these topics:</p>
+
+<ul>
+<li><a href="#requirements">Requirements</a></li>
+<li><a href="#usingsamples">Using the vSphere Web Services SDK .NET Samples</a></li>
+<li><a href="#samplesdesc">Samples Listing</a></li>
+</ul>
+
+</td><td vAlign="top" align="right">
+
+<!--caveat about state of document -->
+<table cellpadding="5" cellspacing="0" width="450" border="0">
+<tr><td colspan="2" align="left"><span class="Exp">Note:&nbsp;&nbsp;</span> Information in this document may not be current. For up-to-date information, check these VMware Web sites:</td></tr>
+<tr><td colspan="2" align="left"><table cellpadding="5" cellspacing="0" width="100%" border="1" class="light-blue-shade">
+<tr><td vAlign="top" colspan="2" align="left"></td></tr>
+<tr class="Caps"><td vAlign="top" width="45%" class="Caption" align="left">Beta or Pre-release Products</td>
+
+<td vAlign="top"><a href="http://communities.vmware.com/community/beta">VMware Beta Community</a></td></tr>
+
+<tr class="Caps"><td class="Caption">Released SDK Products</td><td vAlign="top"><a href="http://www.vmware.com/support/developer/vc-sdk/index.html">VMware vSphere Web Services SDK</a>
+</td></tr></table>
+</td></tr></table>
+<!--conclude caveat about state of links -->
+
+</td></tr>
+</table>
+
+<a name="requirements"></a>
+<h2>Requirements</h2>
+<p>
+.NET framework 3.5+, Visual Studio 2008+ and Microsoft WSE 3.0 (Runtime and Tools)
+</p>
+<a name="usingsamples"></a>
+<h2>Using the vSphere Web Services SDK .NET Samples</h2>
+<p>
+The vSphere Web Services SDK .NET samples use authenticated access to a vCenter Server.
+This includes support for SAML token login to vCenter Servers. To run the samples,
+you set up the development environment, build the dynamic link libraries, and build
+the samples. 
+
+<ol>
+<li>Setup the development work environment - Microsoft Visual programming environment,
+Microsoft .NET Framework, and Microsoft Web Services Enhancements (WSE).
+<li>Download and unzip the vSphere Web Services SDK package.
+<li>Define environment variables for vSphere Web Services files (WS_SDK_HOME and WSDLHOME),
+Microsoft WSE (WSE_HOME), and Visual Studio (VSINSTALLDIR) if you are not using the default
+Visual Studio setup.
+<li>Build C# DLLs for access to the VMware Single Sign On Server.
+<li>Build C# DLLs for access to vSphere servers.
+<li>Build the C# sample programs.
+<li>Run a sample application.
+</ol>
+<p>
+See the
+<strong>Developer&#146;s Setup Guide (Chapter 3, &#147;Setting Up for Microsoft C# Development&#148;)</strong>
+for complete information.
+</p>
+
+<a name="samplesdesc"></a>
+<h2>Some Sample Applications</h2>
+
+
+<table width="100%"  border="1" cellpadding="10" cellspacing="0">
+
+
+<tr><td class="TableHead" vAlign="top">
+Sample</td><td class="TableHead">Description, command-line syntax, and example...</td></tr>
+
+<tr><td vAlign="top">
+<strong>Browser</strong></td><td vAlign="top">
+Gets contents of the Service starting at the root folder, and prints out listing. Optionally, obtain properties for a specific type, or by default, for ManagedEntity.</br></br>
+
+<p><strong>Command line syntax:</strong></br>
+<span class="Code">Browser &lt;webserviceurl&gt; &lt;username&gt; &lt;password&gt; &lt;ssoUrl&gt; [&lt;mo type&gt; &lt;property name&gt; ...]</span></p>
+
+<p><strong>Examples:</strong></br>
+<span class="Code">Browser http://my-server/sdk myuser mypaswd http://sso-server:port/ims/STSService</br>
+Browser http://myserver/sdk myuser mypaswd http://sso-server:port/ims/STSService VirtualMachine name</span></p>
+
+
+</td></tr>
+<tr class="light-blue-shade">
+
+      	<td vAlign="top">
+
+<strong>Connect</strong></td><td vAlign="top">Connects to service, logs into service, and logs out of service.</br></br>
+
+<p><strong>Command line syntax:</strong></br>
+<span class="Code">Connect &lt;webserviceurl&gt; &lt;username&gt; &lt;password&gt; &lt;ssoUrl&gt;</span></p>
+
+<p><strong>Example:</strong></br>
+<span class="Code">Connect http://my-server/sdk myuser mypaswd http://sso-server:port/ims/STSService</span></p>
+</td></tr>
+<tr>
+      	<td vAlign="top">
+<strong>EventFormat</strong></td><td vAlign="top">
+<p>Retrieve and Format the latest event. Demonstrates Event formatting.</p>
+<p><strong>Command line syntax:</strong></br>
+<span class="Code">EventFormat &lt;webserviceurl&gt; &lt;username&gt; &lt;password&gt; &lt;ssoUrl&gt;</span></p>
+
+<p><strong>Example:</strong></br>
+<span class="Code">EventFormat http://my-server/sdk myuser mypaswd http://sso-server:port/ims/STSService</span>
+</p>
+
+</td></tr>
+
+<tr class="light-blue-shade"><td vAlign="top">
+<strong>SimpleClient</strong></td><td vAlign="top">Code that demonstrates connecting to service, logging on to service, obtaining service content, and logging out from service.</br></br>
+
+<p><strong>Command line syntax:</strong></br>
+<span class="Code">SimpleClient &lt;webserviceurl&gt; &lt;username&gt; &lt;password&gt; &lt;ssoUrl&gt;</span></p>
+
+<p><strong>Example:</strong></br>
+<span class="Code">SimpleClient http://my-server/sdk myuser mypaswd http://sso-server:port/ims/STSService</span></p>
+</td></tr><tr>
+      	<td vAlign="top">
+<strong>VmPowerOps</strong></td><td vAlign="top">
+Retrieves a reference to a vm and invokes various power operations on it, as specified on the command line options.
+
+<p><strong>Command line syntax:</strong></br>
+<span class="Code">VmPowerOps &lt;webserviceurl&gt; &lt;username&gt; &lt;password&gt; &lt;ssoUrl&gt; &lt;anyvm|namedvm&gt; &lt;vmname&gt; &lt;on|off|suspend|reset&gt; &lt;normal|hard|softOrFail|softOrHard&gt; &lt;hostname&gt;</span></p><p><strong>Example:</strong></br> 
+<span class="Code">VmPowerOps http://my-server/sdk myuser mypaswd http://sso-server:port/ims/STSService myWin2k3_ProductionVM on normal myhost.mycompany.com</span></p>
+
+</td></tr>
+<tr class="light-blue-shade">
+      	<td vAlign="top">
+<strong>WatchVM</strong></td><td vAlign="top">
+<p>Monitors updates on a particular virtual machine using the PropertyCollector.
+</p>
+<p><strong>Command line syntax:</strong></br>
+<span class="Code">WatchVM &lt;webserviceurl&gt; &lt;username&gt; &lt;password&gt; &lt;ssoUrl&gt; &lt;inventory-path-to-vm&gt;</span></p>
+
+<p><strong>Example:</strong></br>
+<span class="Code">WatchVM http://my-server/sdk myuser mypaswd http://sso-server:port/ims/STSService Datacenter1/vm/myvm</span></p>
+</td></tr></table>
+	 <a name="resources"></a><h2><strong>VMware Resources</strong></h2>
+	    <ul>
+		<li><a href="http://www.vmware.com/communities/content/developer/">Developer Center</a></li>
+          <li><a href="http://kb.vmware.com/">Knowledge Base</a></li>
+        <li><a href="http://www.vmware.com/communities/content/vmug/index.html">User Groups</a> </li>
+        <li><a href="http://communities.vmware.com">VMware Communities</a> </li>
+ 	    <li><a href="http://communities.vmware.com/community/developer/">VMware Developer Community</a></li>
+	 </ul>
+<hr />
+<table border="0" width="100%">
+<tr>
+<td>
+<p class="Miniscule">Copyright &copy; 2012, 2013 VMware, Inc.  All rights not expressly granted herein are reserved.</p>
+<td align="right">
+<p class="Miniscule">Last updated: 1 Jul 2013&nbsp;|&nbsp; VMware vSphere Web Services SDK</p>
+</td>
+</tr>
+</table></td></tr></table></body></html>
+
